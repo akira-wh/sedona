@@ -1,0 +1,139 @@
+.btn {
+  display: block;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.23;
+  text-align: center;
+  color: #fff;
+  background-color: $light-blue;
+  cursor: pointer;
+
+  &:focus {
+    outline: 2px solid $blue-outline;
+  }
+
+  &:active {
+    outline: none;
+  }
+
+  &--extralarge {
+    width: 568px;
+    margin: 0 auto;
+    padding-top: 29px;
+    padding-right: 60px;
+    padding-bottom: 32px;
+    padding-left: 60px;
+    word-wrap: break-word;
+
+    &:focus {
+      outline-offset: 2px;
+    }
+  }
+
+
+  &--large {
+    width: 458px;
+    margin: 0 auto;
+    padding-top: 16px;
+    padding-right: 60px;
+    padding-bottom: 16px;
+    padding-left: 60px;
+    word-wrap: break-word;
+
+    &:focus {
+      outline-offset: 2px;
+    }
+  }
+
+
+  &--medium {
+    width: 137px;
+    height: 36px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border: 2px solid #fff;
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    word-wrap: break-word;
+
+    &:focus {
+      outline-offset: 2px;
+    }
+  }
+
+  &--small {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 48%;
+    padding-top: 3px;
+    padding-right: 17px;
+    padding-bottom: 3px;
+    padding-left: 17px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+    word-wrap: break-word;
+
+    &:focus {
+      outline-offset: 2px;
+    }
+  }
+
+
+  &--lightblue {
+    background-color: $light-blue;
+
+    &:hover,
+    &:focus {
+      background-color: $blue;
+      transition-property: background-color;
+      transition-duration: .1s;
+    }
+
+    &:active {
+      background-color: $dark-blue;
+      color: rgba(#fff, 0.3);
+    }
+  }
+
+
+  &--lightbrown {
+    background-color: $light-brown;
+
+    &:hover,
+    &:focus {
+      background-color: $brown;
+      transition-property: background-color;
+      transition-duration: .1s;
+    }
+
+    &:active {
+      background-color: $dark-brown;
+      color: rgba(#fff, 0.3);
+    }
+  }
+
+  &--transparent {
+    background-color: transparent;
+    color: #fff;
+
+    &:hover,
+    &:focus {
+      background-color: #fff;
+      color: #000;
+      transition-property: background-color, color;
+      transition-duration: .1s;
+    }
+
+    &:active {
+      background-color: #fff;
+      color: #000;
+    }
+  }
+}

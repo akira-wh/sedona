@@ -1,0 +1,182 @@
+.features {
+  padding-top: 55px;
+}
+
+
+.features__title {
+  width: 500px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding: 0;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.23;
+  text-align: center;
+  color: #000;
+}
+
+
+.features__subtitle {
+  width: 500px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding: 0;
+  line-height: 1.85;
+  text-align: center;
+  color: #333;
+}
+
+
+.features__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  align-content: space-between;
+  flex-wrap: wrap;
+  background-color: #eee;
+}
+
+
+.features__list-item {
+  flex-basis: auto;
+  width: 33.333%;
+
+  &--fullwidth {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #81b3d2;
+  }
+
+  &--fullwidth-reverse {
+    flex-direction: row-reverse;
+    background-color: #81b3d2;
+  }
+}
+
+
+.features__info-container {
+  flex-basis: auto;
+  width: 100%;
+  min-height: 256px;
+  box-sizing: border-box;
+  padding-top: 47px;
+  padding-right: 12%;
+  padding-bottom: 30px;
+  padding-left: 12%;
+
+  &--complex {
+    width: 33.333%;
+    padding-right: 4%;
+    padding-left: 4%;
+  }
+}
+
+
+.features__item-title {
+  display: block;
+  width: 158px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  padding-bottom: 42px;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-align: center;
+  position: relative;
+  word-wrap: break-word;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 14px;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: #333;
+  }
+
+  &--num1::before {
+    content: "— №1 —";
+    color: #fff;
+  }
+
+  &--num2::before {
+    content: "— №2 —";
+    color: #fff;
+  }
+
+  &--num3::before {
+    content: "— №3 —";
+  }
+
+  &--num4::before {
+    content: "— №4 —";
+  }
+
+  &--num5::before {
+    content: "— №5 —";
+  }
+
+  &--font-white {
+    color: #fff;
+  }
+}
+
+
+.features__item-description {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  &--font-white {
+    color: #fff;
+  }
+}
+
+
+.features__img-container {
+  flex-basis: auto;
+  width: 66.666%;
+  height: 256px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #81b3d2;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.features__item-img {
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+
+.features__advice {
+  flex-basis: auto;
+}
+
+
+@media #{$desktop} {
+  .features__item-img {
+    margin-bottom: 8px;
+  }
+}

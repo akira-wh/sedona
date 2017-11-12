@@ -1,0 +1,19 @@
+.page-header {
+  position: relative;
+  background-color: #fff;
+}
+
+
+.page-header__logo {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+
+  &--outline {
+    outline: 2px solid $blue-outline;
+    outline-offset: 3px;
+  }
+}

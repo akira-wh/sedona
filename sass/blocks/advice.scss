@@ -1,0 +1,78 @@
+.advice {
+  width: 100%;
+}
+
+
+.advice__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  background-color: #fff;
+}
+
+
+.advice__list-item {
+  flex-basis: auto;
+  width: 33.333%;
+  min-height: 330px;
+  box-sizing: border-box;
+  padding-top: 161px;
+  padding-right: 4%;
+  padding-bottom: 30px;
+  padding-left: 4%;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 61px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &--icon-home::before {
+    width: 75px;
+    height: 72px;
+    background-image: url("../img/advice-home.svg");
+  }
+
+  &--icon-food::before {
+    width: 74px;
+    height: 70px;
+    top: 63px;
+    background-image: url("../img/advice-food.svg");
+  }
+
+  &--icon-souvenirs::before {
+    width: 64px;
+    height: 76px;
+    top: 58px;
+    background-image: url("../img/advice-souvenirs.svg");
+  }
+}
+
+
+.advice__item-title {
+  display: block;
+  margin-bottom: 25px;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-align: center;
+}
+
+
+.advice__item-description {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}

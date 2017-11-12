@@ -1,0 +1,70 @@
+/* Подключение списка переменных */
+@import "variables.scss";
+
+
+/* Подключение normalize.css */
+@import "normalize.scss";
+
+
+/* Подключение шрифтов */
+@import "fonts.scss";
+
+
+/* Подключение общих свойств документа */
+@import "scaffolding.scss";
+
+
+/* Подключение стилей для body-центровщика */
+@import "blocks/body-wrapper.scss";
+
+
+/* Подключение стилей для главного HEADER */
+@import "blocks/page-header.scss";
+
+
+/* Подключение стилей для главного меню */
+@import "blocks/main-nav.scss";
+
+
+/* Подключение стилей для INTRO блока главной страницы */
+@import "blocks/intro.scss";
+
+
+/* Подключение стилей для блока FEATURES */
+@import "blocks/features.scss";
+
+
+/* Подключение стилей для блока ADVICE */
+@import "blocks/advice.scss";
+
+
+/* Подключение стилей для блока OFFER */
+@import "blocks/offer.scss";
+
+
+/* Подключение глобальных стилей для кнопок */
+@import "blocks/btn.scss";
+
+
+/* Подключение стилей для блока MAP */
+@import "blocks/map.scss";
+
+
+/* Подключение стилей для главного FOOTER */
+@import "blocks/page-footer.scss";
+
+
+/* Подключение стилей для блока SOCIAL */
+@import "blocks/social.scss";
+
+
+/* Подключение стилей для заглавного блока FILTER */
+@import "blocks/filter.scss";
+
+
+/* Подключение стилей для блока RESULTS */
+@import "blocks/results.scss";
+
+
+/* Подключение стилей для блока CATALOG */
+@import "blocks/catalog.scss";

@@ -1,0 +1,301 @@
+.filter {
+  background-color: #7198bd;
+  background-image: url("../img/intro-bg-blured.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  padding-top: 0;
+  padding-right: 6%;
+  padding-bottom: 32px;
+  padding-left: 6%;
+}
+
+
+.filter__form {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+
+.filter__fieldset {
+  flex-basis: auto;
+  width: 210px;
+  margin: 0;
+  margin-top: 27px;
+  margin-right: 4.26%;
+  padding: 0;
+  border: none;
+
+  &:nth-child(2) {
+    margin-right: 0;
+  }
+
+  &--complex {
+    width: 30.01%;
+    margin-right: 0;
+    margin-left: auto;
+  }
+}
+
+
+.filter__legend {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.31;
+  color: #fff;
+  margin-bottom: 25px;
+  word-wrap: break-word;
+
+  &--complex {
+    margin-bottom: 10px;
+    margin-left: 1px;
+  }
+}
+
+
+.filter__item {
+  width: 210px;
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+
+  .filter__fieldset &:last-child {
+    margin: 0;
+  }
+}
+
+
+.filter__label {
+  box-sizing: border-box;
+  max-width: 100%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  word-wrap: break-word;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    top: 3px;
+    left: 0;
+    background-image: url("../img/checkbox-empty.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &:focus {
+    outline: 2px solid $blue-outline;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    outline: none;
+  }
+}
+
+
+.filter__input {
+  &:active + .filter__label::before {
+    width: 27px;
+    height: 23px;
+    background-image: url("../img/checkbox-checked.svg");
+  }
+
+  &:checked + .filter__label::before {
+    width: 27px;
+    height: 23px;
+    background-image: url("../img/checkbox-checked.svg");
+  }
+
+  &:checked:active + .filter__label::before {
+    width: 23px;
+    height: 23px;
+    background-image: url("../img/checkbox-empty.svg");
+  }
+
+  &:disabled + .filter__label::before {
+    width: 23px;
+    height: 23px;
+    background-image: url("../img/checkbox-empty-disabled.svg");
+  }
+
+  &:checked:disabled + .filter__label::before {
+    width: 27px;
+    height: 23px;
+    background-image: url("../img/checkbox-checked-disabled.svg");
+  }
+}
+
+
+.filter__price-label {
+  color: #fff;
+}
+
+
+.filter__price-controls {
+  width: 100%;
+  height: 36px;
+  box-sizing: border-box;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  font-size: 0;
+  position: relative;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 22px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+  }
+}
+
+
+.filter__price-label {
+  height: 32px;
+  box-sizing: border-box;
+  padding-top: 2px;
+  padding-right: 5px;
+  padding-left: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  cursor: pointer;
+  text-align: right;
+
+  &--min {
+    width: 27.15%;
+  }
+
+  &--max {
+    width: 24.92%;
+  }
+}
+
+
+.filter__price-input {
+  height: 32px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  padding-top: 3px;
+  padding-right: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 29px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+
+  &--min {
+    width: 22.68%;
+  }
+
+  &--max {
+    width: 24.92%;
+  }
+
+  &::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 29px;
+    color: #fff;
+    opacity: 1;
+  }
+
+  &:focus {
+    outline: 2px solid $blue-outline;
+    outline-offset: -2px;
+  }
+
+  &:focus::placeholder {
+    color: transparent;
+  }
+}
+
+
+.filter__range-controls {
+  width: 100%;
+  position: relative;
+  margin-bottom: 32px;
+}
+
+
+.filter__range-scale {
+  width: 100%;
+  height: 2px;
+  background-color: rgba(#fff, 0.3);
+}
+
+
+.filter__range-bar {
+  width: 80%;
+  height: 2px;
+  background-color: #fff;
+}
+
+
+.filter__range-toggler {
+  width: 4px;
+  height: 4px;
+  background-color: #ababab;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0px 1px 2px 0px rgba(#ababab, 0.4);
+  cursor: pointer;
+  position: absolute;
+  top: -9px;
+
+  &--min {
+    left: 0;
+  }
+
+  &--max {
+    left: 80%;
+  }
+
+  &:hover,
+  &:active {
+    border-width: 9px;
+    transform: translate(-1px, -1px);
+    outline: none;
+  }
+
+  &:focus {
+    border-width: 9px;
+    transform: translate(-1px, -1px);
+    outline: 2px solid $blue-outline;
+    outline-offset: 2px;
+  }
+}
+
+
+.filter__btn {
+  margin: 0;
+  position: relative;
+  left: 48.3%;
+  transform: translateX(-50%);
+}

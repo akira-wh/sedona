@@ -1,0 +1,150 @@
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+.catalog__list-item {
+  padding-top: 30px;
+  padding-right: 6%;
+  padding-bottom: 29px;
+  padding-left: 6%;
+  border-bottom: 1px solid #e5e5e5;
+
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.catalog__img-container {
+  flex-basis: auto;
+  width: 135px;
+  height: 90px;
+  margin-right: 30px;
+  overflow: hidden;
+}
+
+
+.catalog__item-info {
+  flex-basis: auto;
+  width: 53%;
+}
+
+
+.catalog__item-title {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.23;
+  color: #000;
+  margin: 0;
+  margin-top: -6px;
+  margin-bottom: 9px;
+  padding: 0;
+  word-wrap: break-word;
+}
+
+
+.catalog__description {
+  margin-bottom: 14px;
+  font-size: 0;
+}
+
+
+.catalog__item-type {
+  margin: 0;
+  margin-right: 6px;
+  padding: 0;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  min-width: 110px;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+
+.catalog__item-price {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  min-width: 142px;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+
+.catalog__links-container {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.catalog__item-link {
+  &:first-child {
+    margin-right: 6px;
+  }
+}
+
+
+.catalog__item-rating {
+  flex-basis: auto;
+  width: 21%;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  text-align: right;
+}
+
+
+.catalog__item-stars {
+  width: 24px;
+  height: 17px;
+  margin-bottom: 46px;
+  margin-left: auto;
+  background-color: #fff;
+  background-image: url("../img/star.svg");
+  background-repeat: repeat-x;
+  background-size: auto auto;
+
+  &--2 {
+    width: 48px;
+    height: 17px;
+  }
+
+  &--3 {
+    width: 72px;
+    height: 17px;
+  }
+
+  &--4 {
+    width: 96px;
+    height: 17px;
+  }
+
+  &--5 {
+    width: 120px;
+    height: 17px;
+  }
+}
+
+
+.catalog__item-grade {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  padding-top: 3px;
+  padding-right: 13px;
+  padding-bottom: 3px;
+  padding-left: 15px;
+  background-color: #f2f2f2;
+  word-wrap: break-word;
+}
